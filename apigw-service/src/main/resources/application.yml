@@ -1,0 +1,33 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: apigw
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          uri: http://localhost:8080/users
+          predicates:
+            - Path=/users
+        - id: route2
+          uri: http://localhost:8081/ratings
+          predicates:
+            - Path=/ratings
+        - id: route3
+          uri: http://localhost:8082/reviews
+          predicates:
+            - Path=/reviews
+        - id: route4
+          uri: http://localhost:8080/user
+          predicates:
+            - Path=/user
+        - id: route5
+          uri: http://localhost:8082/review
+          predicates:
+            - Path=/review
+        - id: route6
+          uri: http://localhost:8081/rating
+          predicates:
+            - Path=/rating
