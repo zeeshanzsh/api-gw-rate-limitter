@@ -11,6 +11,13 @@ spring:
           uri: http://localhost:8080/users
           predicates:
             - Path=/users
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 20
+                redis-rate-limiter.burstCapacity: 40
+                redis-rate-limiter.requestedTokens: 1
+
         - id: route2
           uri: http://localhost:8081/ratings
           predicates:
