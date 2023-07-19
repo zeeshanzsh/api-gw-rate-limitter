@@ -1,6 +1,7 @@
 
+
 # api-gw-rate-limitter
 Micro-services with API gateway implimentation
 
-![GIT_API_GW](https://github.com/zeeshanzsh/api-gw-rate-limitter/assets/30749560/9942b53d-1c41-40c1-927f-b4e9ea662938)
+![API_GW](https://github.com/zeeshanzsh/api-gw-rate-limitter/assets/30749560/bd2b0b72-d52a-4b24-b5ef-3bf3c4c68819)
 
